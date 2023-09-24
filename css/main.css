@@ -617,3 +617,24 @@ h4 {
 .icon-check{
     margin: 0 0.8rem 0 0;
 }
+
+.mentorship-card{
+    width: 66%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mentorship-card .list{
+    width: 100%;
+}
+
+.mentorship-card .list .list-item{
+    width: 100%;
+}
+
+
+.mentorship-card .list .list-item .card .overline{
+    font-size: 1.4rem;
+    color: var(--white);
+}
