@@ -687,3 +687,30 @@ h3{
 .mentorship-card .financial p a{
     color: var(--primary-300);
 }
+
+.certification{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.certification .details p{
+    text-align: center;
+    
+}
+
+.certification .details{
+    width: 50%;
+}
+
+.certificate{
+    width: 100%;
+    text-align: center;
+    padding: 7em 0;
+    background: linear-gradient(0deg, rgba(24,24,24,0.5) 0%, rgba(24,24,24,0) 100%);
+}
+
+.certificate img{
+    width: 70%;
+}
