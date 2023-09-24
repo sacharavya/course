@@ -487,7 +487,7 @@ main {
     content: '\002B';
 }
 
- .active:before {
+.accordion-container .active:before {
     content: "\2212";
 }
 
