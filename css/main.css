@@ -627,7 +627,7 @@ h4 {
 }
 
 .mentorship-card{
-    max-width: 30%;
+    max-width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -673,7 +673,7 @@ h3{
 }
 
 .mentorship-card .financial p{
-    margin: 1.5rem 0 0 0;
+    margin: 1.5rem 6rem 0 6rem;
     font-size: 1.2rem;
 }
 
