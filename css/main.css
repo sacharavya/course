@@ -435,7 +435,8 @@ main {
     font-size: 1.4rem;
 }
 
-.curriculum-accordion {
+.curriculum-accordion, 
+.faq-accordion {
     padding-top: 3em;
     display: flex;
     flex-direction: column;
@@ -456,7 +457,7 @@ main {
     border: none;
 }
 
-.curriculum-accordion .accordion {
+ .accordion {
     background-color: var(--accordion-color);
     color: var(--white);
     cursor: pointer;
@@ -482,22 +483,14 @@ main {
 }
 
 
-.curriculum-accordion .accordion:before {
+ .accordion:before {
     content: '\002B';
 }
 
-.curriculum-accordion .active:before {
+ .active:before {
     content: "\2212";
 }
 
-.curriculum-accordion .accordion img {
-    margin-right: 0.5em;
-    padding: 0;
-}
-
-.curriculum-accordion .accordion img.active {
-    transform: rotate(-90deg);
-}
 
 .panel {
     padding: 0 1.8em;
@@ -714,3 +707,4 @@ h3{
 .certificate img{
     width: 70%;
 }
+
