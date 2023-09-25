@@ -763,3 +763,14 @@ h3{
 .inquiry-card .secondary-cta{
     box-shadow: none !important;
 }
+
+footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--primary-black);
+    border-radius: 1.2em 1.2em 0 0 ;
+    padding: 6em;
+    border: 1px solid var(--border);
+}
