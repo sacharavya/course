@@ -945,8 +945,8 @@ header .wrapper{
     img{
         width: 100%;
     }
-    .toc{
-        top: 50px;
+    .col-left {
+        top: 60px !important;
     }
 
     .pricing-cards .list{
