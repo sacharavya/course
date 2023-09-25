@@ -49,6 +49,7 @@ header {
     position: sticky;
     top: 0;
     background-color: var(--background);
+    z-index: 9;
 }
 
 nav {
@@ -177,6 +178,7 @@ main {
 .course-content {
     display: flex;
     gap: 3.2em;
+    margin-bottom: 8em;
 }
 
 .course-content .col-left {
@@ -713,7 +715,7 @@ h3{
     justify-content: center;
     align-items: center;
     padding: 5em 9em;
-    margin: 2em 2em 6em 2em;
+    margin: 2em 2em 0 2em;
     border: 1px solid var(--border);
     background-color: #2e2e2e;
     border-radius: 1.2em;
@@ -780,6 +782,6 @@ footer p{
     max-width: 70%;
 }
 
-footer a{
+footer p a{
     color: var(--primary-300);
 }
