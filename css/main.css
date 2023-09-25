@@ -23,6 +23,7 @@ html {
 body {
     margin: 0;
     padding: 0;
+    width: 100%;
     font-family: 'Poppins', sans-serif;
     /* font-family: 'SF Pro Display', sans-serif;     */
     background: var(--background);
@@ -436,7 +437,7 @@ main {
     font-size: 1.4rem;
 }
 
-.curriculum-accordion, 
+.curriculum-accordion,
 .faq-accordion {
     padding-top: 3em;
     display: flex;
@@ -458,7 +459,7 @@ main {
     border: none;
 }
 
- .accordion {
+.accordion {
     background-color: var(--accordion-color);
     color: var(--white);
     cursor: pointer;
@@ -484,7 +485,7 @@ main {
 }
 
 
- .accordion:before {
+.accordion:before {
     content: '\002B';
 }
 
@@ -583,28 +584,29 @@ h4 {
     border-radius: 0.8rem;
 }
 
-.pricing-cards .card .payment{
+.pricing-cards .card .payment {
     display: flex;
     align-items: end;
 }
 
-.pricing-cards .card .payment span{
+.pricing-cards .card .payment span {
     padding: 0 0 1em 0.5em;
 }
 
-.pricing-cards .card .payment span p{
+.pricing-cards .card .payment span p {
     padding: 0;
     margin: 0;
 }
 
 
-.pricing-cards .title{
+.pricing-cards .title {
     margin: 2em 0 0 0;
 }
 
-.offering{
+.offering {
     width: 100%;
 }
+
 .offering ul {
     list-style-type: none;
     margin: 0;
@@ -613,21 +615,21 @@ h4 {
     padding: 0;
 }
 
-.offering ul li{
+.offering ul li {
     display: flex;
     align-items: center;
 }
 
-.offering ul li p{
+.offering ul li p {
     padding: 0;
     margin: 0;
 }
 
-.icon-check{
+.icon-check {
     margin: 0 0.8rem 0 0;
 }
 
-.mentorship-card{
+.mentorship-card {
     max-width: 50%;
     display: flex;
     justify-content: center;
@@ -635,81 +637,81 @@ h4 {
     padding: 2em;
 }
 
-.mentorship-card .list{
+.mentorship-card .list {
     width: 100%;
 }
 
-.mentorship-card .list .list-item{
+.mentorship-card .list .list-item {
     width: 100%;
 }
 
 
-.mentorship-card .list .list-item .card .overline{
+.mentorship-card .list .list-item .card .overline {
     font-size: 1.4rem;
     color: var(--white);
 }
 
-h3{
+h3 {
     color: var(--white);
     font-weight: 400;
     font-size: 1.8rem;
 }
 
-.get-in-touch-btn{
+.get-in-touch-btn {
     padding: 1.2em;
 }
 
-.mentorship-card .cta-btns{
+.mentorship-card .cta-btns {
     justify-content: center;
 }
 
-.mentorship-card .cta-btns .secondary-cta{
+.mentorship-card .cta-btns .secondary-cta {
     background-color: var(--primary-black);
     box-shadow: 0px 12px 60px 14px rgba(0, 0, 0, 0.3);
 }
 
 .mentorship-card .title h3,
-.mentorship-card .details p{
+.mentorship-card .details p {
     text-align: center;
 }
 
-.mentorship-card .financial p{
+.mentorship-card .financial p {
     margin: 1.5rem 6rem 0 6rem;
     font-size: 1.2rem;
 }
 
-.mentorship-card .financial p a{
+.mentorship-card .financial p a {
     color: var(--primary-300);
 }
 
-.certification{
+.certification {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.certification .details p{
+.certification .details p {
     text-align: center;
-    
+
 }
 
-.certification .details{
+.certification .details {
     width: 90%;
 }
 
-.certificate{
+.certificate {
     width: 100%;
     text-align: center;
     padding: 7em 0;
-    background: linear-gradient(0deg, rgba(24,24,24,0.5) 0%, rgba(24,24,24,0) 100%);
+    background: linear-gradient(0deg, rgba(24, 24, 24, 0.5) 0%, rgba(24, 24, 24, 0) 100%);
 }
 
-.certificate img{
+.certificate img {
     width: 70%;
 }
 
-.inquiry-card{
+.inquiry-card {
     max-width: 100%;
     display: flex;
     justify-content: center;
@@ -721,67 +723,123 @@ h3{
     border-radius: 1.2em;
 }
 
-.inquiry-card .list{
+.inquiry-card .list {
     width: 100%;
 }
 
-.inquiry-card .list .list-item{
+.inquiry-card .list .list-item {
     width: 100%;
 }
 
 
-.inquiry-card .list .list-item .card .overline{
+.inquiry-card .list .list-item .card .overline {
     font-size: 1.4rem;
     color: var(--white);
 }
 
-.get-in-touch-btn{
+.get-in-touch-btn {
     padding: 1.2em;
 }
 
-.inquiry-card .cta-btns{
+.inquiry-card .cta-btns {
     justify-content: center;
 }
 
-.inquiry-card .cta-btns .secondary-cta{
+.inquiry-card .cta-btns .secondary-cta {
     background-color: var(--primary-black);
     box-shadow: 0px 12px 60px 14px rgba(0, 0, 0, 0.3);
 }
 
 .inquiry-card .title h3,
-.inquiry-card .details p{
+.inquiry-card .details p {
     text-align: center;
 }
 
-.inquiry-card .financial p{
+.inquiry-card .financial p {
     margin: 1.5rem 6rem 0 6rem;
     font-size: 1.2rem;
 }
 
-.inquiry-card .financial p a{
+.inquiry-card .financial p a {
     color: var(--primary-300);
 }
 
-.inquiry-card .secondary-cta{
+.inquiry-card .secondary-cta {
     box-shadow: none !important;
 }
 
-footer{
+footer {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     background-color: var(--primary-black);
-    border-radius: 1.2em 1.2em 0 0 ;
+    border-radius: 1.2em 1.2em 0 0;
     padding: 6em;
     border: 1px solid var(--border);
 }
 
-footer p{
+footer p {
     text-align: center;
     max-width: 70%;
 }
 
-footer p a{
+footer p a {
     color: var(--primary-300);
+}
+
+@media only screen and (min-width: 768px) {
+    .wrapper {
+        width: 90% !important;
+    }
+
+    main {
+        flex-direction: column;
+        display: flex;
+        gap: 8em;
+        margin-top: 6em;
+        align-items: center;
+        height: auto;
+    }
+
+    main .left-col{
+        width: 90%;
+    }
+
+    main .right-col img{
+        height: auto;
+        width: 70%;
+    }
+    .course-content{
+        flex-direction: column;
+    }
+    .col-left{
+        width: 100% !important;
+        margin: 0 auto;
+        position: sticky;
+        top: 90px;
+    }
+    .enroll-cta{
+        display: none;
+    }
+    .toc{
+        gap: 1em;
+    }
+    .content-list ul{
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        padding: 0 0 2em 0 !important;
+        margin: 1em 0 0 1em !important;
+    }
+    .content-list ul li{
+        border: none;
+    }
+    .content-list ul li.active{
+        border: none;
+        background-color: var(--onhover-card);
+        border-radius: 1em;
+    }
 }
