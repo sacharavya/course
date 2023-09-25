@@ -921,11 +921,19 @@ footer p a {
     .title h2 {
         font-size: 2.4rem;
     }
-
+nav{
+    display: none;
+}
+header .wrapper{
+    height: 80px;
+}
     .right-col,
     .image-container,
     img{
         width: 100%;
+    }
+    .toc{
+        top: 100px;
     }
 
     .pricing-cards .list{
