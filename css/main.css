@@ -895,8 +895,25 @@ footer p a {
     }
 }
 @media only screen  and (max-width:768px){
+    .right-col,
+    .image-container,
+    img{
+        width: 100%;
+    }
     .pricing-cards .list{
         flex-direction: column;
+    }
+    main .cta-btns{
+        align-items: first baseline;
+    }
+    .cta-btns{
+        flex-direction: column;
+    }
+    .inquiry-card{
+        padding: 5em 4em;
+    }
+    .accordion-content h3{
+        text-align: left;
     }
 }
 
