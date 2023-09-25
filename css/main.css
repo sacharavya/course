@@ -774,3 +774,12 @@ footer{
     padding: 6em;
     border: 1px solid var(--border);
 }
+
+footer p{
+    text-align: center;
+    max-width: 70%;
+}
+
+footer a{
+    color: var(--primary-300);
+}
