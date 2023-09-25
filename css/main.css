@@ -30,7 +30,8 @@ body {
 }
 
 .wrapper {
-    padding:  0 4em;
+    width: 1200px;
+    margin: auto;
 }
 
 h3 {
@@ -47,7 +48,7 @@ header{
     z-index: 9;
 }
 
-header .wrapper {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -794,6 +795,9 @@ footer p a {
 }
 
 @media only screen  and (max-width:1280px){
+    .wrapper{
+        width: 980px;
+    }
     .course-content{
         width: 100%;
         flex-direction: column;
@@ -832,6 +836,10 @@ footer p a {
 }
 
 @media only screen  and (max-width:1024px){
+    .wrapper{
+        min-width: 768px;
+        max-width: 980px;
+    }
     main {
         flex-direction: column;
         display: flex;
