@@ -30,8 +30,7 @@ body {
 }
 
 .wrapper {
-    max-width: 90%;
-    margin: 0 auto;
+    padding:  0 4em;
 }
 
 h3 {
@@ -40,16 +39,19 @@ h3 {
 
 
 /*Navigation bar*/
-
-header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header{
     position: -webkit-sticky;
     /* Safari */
     position: sticky;
     top: 0;
+    z-index: 9;
+}
+
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
     background-color: var(--background);
     z-index: 9;
 }
@@ -790,6 +792,45 @@ footer p {
 footer p a {
     color: var(--primary-300);
 }
+
+@media only screen  and (max-width:1280px){
+    .course-content{
+        width: 100%;
+        flex-direction: column;
+    }
+    .col-left{
+        width: 100% !important;
+        margin: 0 auto;
+        position: sticky;
+        top: 77px;
+    }
+    .enroll-cta{
+        display: none;
+    }
+    .toc{
+        gap: 1em;
+        padding: 1em;
+        background-color: var(--primary-black);
+    }
+    .content-list ul{
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+
+    }
+    .content-list ul li{
+        border: none;
+    }
+    .content-list ul li.active{
+        border: none;
+        background-color: var(--onhover-card);
+        border-radius: 1em;
+    }
+
+}
+
 @media only screen  and (max-width:1024px){
     main {
         flex-direction: column;
@@ -799,12 +840,12 @@ footer p a {
         align-items: center;
         height: auto;
     }
-    main .left-col{
-        width: 90%;
-    }
-    header{
+    .left-col{
         width: 100%;
-        height: 76px;
+    }
+    .col-right{
+        width: 100%;
+        flex-grow: 1;
     }
     .course-content{
         width: 100%;
@@ -822,6 +863,7 @@ footer p a {
     .toc{
         gap: 1em;
         padding: 1em;
+        background-color: var(--primary-black);
     }
     .content-list ul{
         display: flex;
@@ -839,76 +881,55 @@ footer p a {
         background-color: var(--onhover-card);
         border-radius: 1em;
     }
-    .list{
+    .who-cards .list{
         flex-wrap: wrap;
     }
-
-    .list-item{
-        width: 290px !important;
-        min-width: 255px;
-        
+    .certification .details {
+        width: 100%;
     }
-    
+    .certification .details p {
+        text-align: left;
+    }
+    .curriculum-accordion .accordion-content h3{
+        text-align: left;
+    }
+}
+@media only screen  and (max-width:768px){
+    .pricing-cards .list{
+        flex-direction: column;
+    }
 }
 
-@media only screen and (max-width: 768px) {
-    .wrapper {
-        width: 90% !important;
+@media only screen  and (max-width:480px){
+    .title h2 {
+        font-size: 2.4rem;
     }
 
-    main {
-        flex-direction: column;
-        display: flex;
-        gap: 8em;
-        margin-top: 6em;
-        align-items: center;
-        height: auto;
-    }
-    header{
+    .right-col,
+    .image-container,
+    img{
         width: 100%;
-    }
-    main{
-        width: 100%;
-    }
-    main .left-col{
-        width: 90%;
     }
 
-    main .right-col img{
-        height: auto;
-        width: 70%;
-    }
-    .course-content{
-        width: 100%;
+    .pricing-cards .list{
         flex-direction: column;
     }
-    .col-left{
-        width: 100% !important;
-        margin: 0 auto;
-        position: sticky;
-        top: 90px;
+
+    .mentorship-card{
+        max-width: 100%;
     }
-    .enroll-cta{
-        display: none;
+
+    .details{
+        width: 100%;
     }
-    .toc{
-        gap: 1em;
+
+    .pricing .hero-details p{
+        text-align: left !important;
     }
-    .content-list ul{
-        display: flex;
-        flex-direction: row;
-        overflow-x: auto;
-        overflow-y: hidden;
-        white-space: nowrap;
-        padding: 0 0 2em 0 !important;
-        margin: 1em 0 0 1em !important;
+
+    .mentorship-card .financial p {
+        margin: 0;
+        font-size: 1.2rem;
     }
-    .content-list ul li{
-        border: none;
-    }
-    .content-list ul li.active{
-        border: none;
-        background-color: var(--onhover-card);
-        border-radius: 1em;
-    }
+    
 }
