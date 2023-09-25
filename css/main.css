@@ -30,7 +30,7 @@ body {
 }
 
 .wrapper {
-    max-width: 1200px;
+    max-width: 90%;
     margin: 0 auto;
 }
 
@@ -42,6 +42,7 @@ h3 {
 /*Navigation bar*/
 
 header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -307,6 +308,8 @@ main {
 }
 
 .list .list-item {
+    max-width: 293px;
+    min-width: 255px;
     width: 293px;
 
 }
@@ -787,8 +790,68 @@ footer p {
 footer p a {
     color: var(--primary-300);
 }
+@media only screen  and (max-width:1024px){
+    main {
+        flex-direction: column;
+        display: flex;
+        gap: 8em;
+        margin-top: 6em;
+        align-items: center;
+        height: auto;
+    }
+    main .left-col{
+        width: 90%;
+    }
+    header{
+        width: 100%;
+        height: 76px;
+    }
+    .course-content{
+        width: 100%;
+        flex-direction: column;
+    }
+    .col-left{
+        width: 100% !important;
+        margin: 0 auto;
+        position: sticky;
+        top: 77px;
+    }
+    .enroll-cta{
+        display: none;
+    }
+    .toc{
+        gap: 1em;
+        padding: 1em;
+    }
+    .content-list ul{
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
 
-@media only screen and (min-width: 768px) {
+    }
+    .content-list ul li{
+        border: none;
+    }
+    .content-list ul li.active{
+        border: none;
+        background-color: var(--onhover-card);
+        border-radius: 1em;
+    }
+    .list{
+        flex-wrap: wrap;
+    }
+
+    .list-item{
+        width: 290px !important;
+        min-width: 255px;
+        
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
     .wrapper {
         width: 90% !important;
     }
@@ -801,7 +864,12 @@ footer p a {
         align-items: center;
         height: auto;
     }
-
+    header{
+        width: 100%;
+    }
+    main{
+        width: 100%;
+    }
     main .left-col{
         width: 90%;
     }
@@ -811,6 +879,7 @@ footer p a {
         width: 70%;
     }
     .course-content{
+        width: 100%;
         flex-direction: column;
     }
     .col-left{
