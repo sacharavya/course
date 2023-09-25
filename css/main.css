@@ -837,8 +837,7 @@ footer p a {
 
 @media only screen  and (max-width:1024px){
     .wrapper{
-        min-width: 768px;
-        max-width: 980px;
+        width: 80%;
     }
     main {
         flex-direction: column;
@@ -863,7 +862,7 @@ footer p a {
         width: 100% !important;
         margin: 0 auto;
         position: sticky;
-        top: 77px;
+        top: 80px;
     }
     .enroll-cta{
         display: none;
@@ -903,6 +902,9 @@ footer p a {
     }
 }
 @media only screen  and (max-width:768px){
+    header{
+        height: 70px;
+    }
     .right-col,
     .image-container,
     img{
@@ -926,6 +928,9 @@ footer p a {
 }
 
 @media only screen  and (max-width:480px){
+    .wrapper{
+        width: 90%;
+    }
     .title h2 {
         font-size: 2.4rem;
     }
@@ -941,7 +946,7 @@ header .wrapper{
         width: 100%;
     }
     .toc{
-        top: 100px;
+        top: 50px;
     }
 
     .pricing-cards .list{
